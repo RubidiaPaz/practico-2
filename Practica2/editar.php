@@ -5,7 +5,7 @@
 
     foreach ($materias->materia as $row)
     {
-        if($row->codigo == $_GET['nombre'])
+        if($row->codigo == $_GET['cod'])
         {
             $index = $i;
             break;
@@ -18,7 +18,7 @@
     $materias->materia[$index]->investigacion = $_POST['investigacion'];
     $materias->materia[$index]->examen = $_POST['examen'];
     $promedio= ($_POST['tarea']*0.5) + ($_POST['investigacion']*0.3) +($_POST['examen']*0.20);
-    $materia->addChild('promedio', (round($promedio,2)));
+    $materias->materia[$index]->promedio=(round($promedio,2));
 
     file_put_contents('./materias.xml', $materias->asXML());
     session_start();
