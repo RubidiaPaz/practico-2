@@ -18,8 +18,7 @@
     <h1 class="page-header text-center">Calculadora de CUM</h1>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar materia</a>
-            <a href="#addnew2" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Alumno</a>            
+            <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar registro de notas</a>
             <?php
             if (isset($_SESSION['nombre'])) {
                 echo "<h4>".$_SESSION['nombre']."</h4>";

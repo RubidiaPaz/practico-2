@@ -22,7 +22,7 @@
 						<label class="control-label" for="nombre">Tarea:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="nombre" id="nombre">
+						<input type="number" min="0" max="10" class="form-control" name="nombre" id="nombre">
 					</div>
 				</div>
 				<div class="row form-group">
@@ -30,7 +30,7 @@
 						<label class="control-label" for="uvs">Investigacion:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" min="2" max="5" class="form-control" name="uvs" id="uvs">
+						<input type="number" min="0" max="10" class="form-control" name="uvs" id="uvs">
 					</div>
 				</div>
 				<div class="row form-group">
