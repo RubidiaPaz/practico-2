@@ -5,7 +5,8 @@
     $materia->addChild('tarea', $_POST['tarea']);
     $materia->addChild('investigacion', $_POST['investigacion']);
     $materia->addChild('examen', $_POST['examen']);
-    $materia->addChild('promedio',);
+    $promedio= $_POST['tarea'] + $_POST['investigacion'] +$_POST['examen'];
+    $materia->addChild('promedio', ($promedio/3));
 
     file_put_contents('./materias.xml', $materias->asXML());
     session_start();
