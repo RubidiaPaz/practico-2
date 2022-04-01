@@ -11,34 +11,34 @@
 			<form method="POST" action="agregar.php">
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" for="codigo">Nombre:</label>
+						<label class="control-label" for="nombre">Nombre:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="codigo" id="codigo">
+						<input type="text" class="form-control" name="nombre" id="nombre">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" for="nombre">Tarea:</label>
+						<label class="control-label" for="tarea">Tarea:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" min="0" max="10" class="form-control" name="nombre" id="nombre">
+						<input type="number" min="0" max="10" class="form-control" name="tarea" id="tarea">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" for="uvs">Investigacion:</label>
+						<label class="control-label" for="investigacion">Investigacion:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" min="0" max="10" class="form-control" name="uvs" id="uvs">
+						<input type="number" min="0" max="10" class="form-control" name="investigacion" id="investigacion">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" for="nota" >Examen Parcial:</label>
+						<label class="control-label" for="examen" >Examen Parcial:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" min="0" max="10" step="0.1" class="form-control" name="nota" id="nota">
+						<input type="number" min="0" max="10" step="0.1" class="form-control" name="examen" id="examen">
 					</div>
 				</div>
             </div> 

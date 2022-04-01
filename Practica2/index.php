@@ -19,19 +19,14 @@
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar registro de notas</a>
-            <?php
-            if (isset($_SESSION['nombre'])) {
-                echo "<h4>".$_SESSION['nombre']."</h4>";
-            }
-              
-            ?>
+            
             <table class="table table-bordered table-striped" style="margin-top:20px;">
                 <thead>
-                    <th>Codigo</th>
-                    <th>Nombre</th>
-                    <th>Uv</th>
-                    <th>Notas</th>
-                    <th>Acciones</th>
+                    <th>Nobre</th>
+                    <th>Tarea</th>
+                    <th>Investigacion</th>
+                    <th>Examen Parcial</th>
+                    <th>Promedio</th>
                 </thead>
                 <tbody>
                     <?php
@@ -45,16 +40,13 @@
                             $numerador += ($row->uvs * $row->nota);
                     ?>
                         <tr>
-                            <td><?=$row->codigo?></td>
                             <td><?=$row->nombre?></td>
-                            <td><?=$row->uvs?></td>
-                            <td><?=$row->nota?></td>
+                            <td><?=$row->tarea?></td>
+                            <td><?=$row->investigacion?></td>
+                            <td><?=$row->examen?></td>
                             <td>
-                                <a href="#edit_<?=$row->codigo?>" data-toggle="modal" class="btn btn-success">Editar</a>
-                                <a href="#delete_<?=$row->codigo?>" data-toggle="modal" class="btn btn-danger">Borrar</a>
+
                             </td>
-                            <?php include('editar_modal.php'); ?>
-                            <?php include('borrar_modal.php'); ?>
                         </tr>
                     <?php 
                         }
@@ -66,22 +58,6 @@
                     
                 </tbody>
             </table>
-            <?php
-                if(isset($cum))
-                {
-                    echo "<h2>CUM: $cum</h2>";
-                }
-                if ($cum >= 7.5) {
-                    echo "<h3>Puedes cursar un maximo de 32 unidades valorativas(UV)</h3>";
-                }if ($cum>=7.0 && $cum< 7.5 ) {
-                    echo "<h3>Puedes cursar un maximo de 24 unidades valorativas(UV)</h3>";
-                } if($cum>=6.0 && $cum<7.0) {
-                    echo "<h3>Puedes cursar un maxino de 20 unidades valorativas(UV)</h3>";
-                }
-                
-                
-            ?>
-         
         </div>
     </div>
 </div>
