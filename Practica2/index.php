@@ -34,6 +34,7 @@
                         $numerador = 0;
                         $denominador = 0;
                         
+                        
                         foreach ($materias->materia as $row)
                         {
                             $denominador += $row->uvs;
@@ -44,9 +45,13 @@
                             <td><?=$row->tarea?></td>
                             <td><?=$row->investigacion?></td>
                             <td><?=$row->examen?></td>
+                            <td><?=$row->promedio?></td>
                             <td>
-
+                                <a href="#edit_<?=$row->codigo?>" data-toggle="modal" class="btn btn-success">Editar</a>
+                                <a href="#delete_<?=$row->codigo?>" data-toggle="modal" class="btn btn-danger">Borrar</a>
                             </td>
+                            <?php include('editar_modal.php'); ?>
+                            <?php include('borrar_modal.php'); ?>
                         </tr>
                     <?php 
                         }
