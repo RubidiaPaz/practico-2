@@ -76,7 +76,7 @@
     {
 ?>
     <script>
-        alertify.success('Materia insertada exitosamente');
+        alertify.success('Registro insertado exitosamente');
     </script>
 <?php
     unset($_SESSION['agregar']);
@@ -89,7 +89,7 @@
     {
 ?>
     <script>
-        alertify.success('Materia editada exitosamente');
+        alertify.success('Registro editada exitosamente');
     </script>
 <?php
     unset($_SESSION['editar']);
@@ -102,7 +102,7 @@
     {
 ?>
     <script>
-        alertify.success('Materia eliminada exitosamente');
+        alertify.success('Registro Eliminado exitosamente');
     </script>
 <?php
     unset($_SESSION['eliminar']);

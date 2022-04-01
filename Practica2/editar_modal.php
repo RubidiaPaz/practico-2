@@ -7,15 +7,7 @@
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
-			<form method="POST" action="editar.php?cod=<?=$row->codigo?>">
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label" for="codigo">Codigo:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="codigo" id="codigo" value="<?=$row->codigo?>">
-					</div>
-				</div>
+			<form method="POST" action="editar.php?cod=<?=$row->nombre?>">
 				<div class="row form-group">
 					<div class="col-sm-2">
 						<label class="control-label" for="nombre">Nombre:</label>
@@ -26,18 +18,26 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" for="uvs">UVS:</label>
+						<label class="control-label" for="tarea">Tarea:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" min="2" max="5" class="form-control" name="uvs" id="uvs" value="<?=$row->uvs?>">
+						<input type="text" min="0" max="10" class="form-control" name="tarea" id="tarea" value="<?=$row->tarea?>">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" for="nota" >Nota:</label>
+						<label class="control-label" for="investigacion">Investigacion:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="number" min="0" max="10" step="0.1" class="form-control" name="nota" id="nota" value="<?=$row->nota?>">
+						<input type="number" min="0" max="10" class="form-control" name="investigacion" id="investigacion" value="<?=$row->investigacion?>">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" for="examen" >Examen:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="number" min="0" max="10" step="0.1" class="form-control" name="examen" id="examen" value="<?=$row->examen?>">
 					</div>
 				</div>
             </div> 

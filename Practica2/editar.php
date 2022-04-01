@@ -5,7 +5,7 @@
 
     foreach ($materias->materia as $row)
     {
-        if($row->codigo == $_GET['cod'])
+        if($row->codigo == $_GET['nombre'])
         {
             $index = $i;
             break;
@@ -13,10 +13,10 @@
         $i++;
     }
 
-    $materias->materia[$index]->codigo = $_POST['codigo'];
     $materias->materia[$index]->nombre = $_POST['nombre'];
-    $materias->materia[$index]->uvs = $_POST['uvs'];
-    $materias->materia[$index]->nota = $_POST['nota'];
+    $materias->materia[$index]->tarea = $_POST['tarea'];
+    $materias->materia[$index]->investigacion = $_POST['investigacion'];
+    $materias->materia[$index]->examen = $_POST['examen'];
 
     file_put_contents('./materias.xml', $materias->asXML());
     session_start();
