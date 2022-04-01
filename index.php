@@ -45,7 +45,7 @@
 <section>
 <article>
 <div id="empleado">
-<form action="salario.php" method="POST" name="salario" id="salario" class="formoid-solid-purple">
+<div class="formoid-solid-purple">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -112,10 +112,11 @@
     <input type="submit" name="enviar" id="enviar" value="Enviar" />
     <input type="reset" name="reset" id="reset" value="Restablecer" />
 </div>
-</form>
+
 </div>
 </article>
 </section>
+    </div>
 <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script src="js/sidebars.js"></script>

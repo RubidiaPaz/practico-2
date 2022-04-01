@@ -45,77 +45,78 @@
 <section>
 <article>
 <div id="empleado">
-<form action="salario.php" method="POST" name="salario" id="salario" class="formoid-solid-purple">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.php">GUIA 5</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="guia6.php">GUIA 6</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="guia7.php">GUIA 7</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="guia8.php">GUIA 8</a>
-              </li>
-            </ul>
-          </div>
+  <div class="formoid-solid-purple">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.php">GUIA 5</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="guia6.php">GUIA 6</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="guia7.php">GUIA 7</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="guia8.php">GUIA 8</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        <div class="title">
+            <h2>Tabla de Multiplicar</h2>
         </div>
-      </nav>
-<div class="title">
-    <h2>Tabla de Multiplicar</h2>
+        <div class="element-name">
+            <label class="title"></label>
+            <div class="nameFirst">
+                <input type="text" name="empleado" id="txtempleado" maxlength="50" placeholder="Nombre empleado" allowed="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚáéíóúÜü" messageid="alfabeticchars" class="large" />
+                <span class="icon-place"></span>
+            </div>
+            <span id="alfabeticchars">Solo acepta caracteres alfabéticos</span>
+        </div>
+        <div class="element-number">
+            <label class="title"></label>
+            <div class="item-cont">
+                <input type="text" name="sueldobase" id="sueldobase" maxlength="12" placeholder="Sueldo base" allowed="0123456789." messageid="numbersonly" class="large" />
+                <span class="icon-place"></span>
+            </div>
+            <span id="numbersonly">Solo acepta números y punto decimal</span>
+        </div>
+        <div class="element-checkbox">
+            <label class="title">Horas extras:</label>
+            <div class="column column1">
+                <input type="checkbox" name="hextra" id="hextrasi" value="no" />
+                <span>Habilitar</span>
+            </div>
+        </div>
+        <div class="element-number">
+            <label class="title"></label>
+            <div class="item-cont">
+                <input type="text" name="numhorasex" id="numhorasex" maxlength="2" disabled="disabled" placeholder="Número de horas" allowed="0123456789" messageid="integersonly" />
+                <span class="icon-place"></span>
+            </div>
+            <span id="integersonly">Solo acepta números enteros</span>
+        </div>
+        <div class="element-number">
+            <label class="title"></label>
+            <div class="item-cont">
+                <input type="text" name="pagohextra" id="pagohextra" size="12" maxlength="6" disabled="disabled" placeholder="Pago hora extra" allowed="0123456789." messageid="othernumbersonly" />
+                <span class="icon-place"></span>
+            </div>
+            <span id="othernumbersonly">Solo acepta números y punto decimal</span>
+        </div>
+        <div class="submit">
+            <input type="submit" name="enviar" id="enviar" value="Enviar" />
+            <input type="reset" name="reset" id="reset" value="Restablecer" />
+        </div>
+        </form>
+        </div>
+        </article>
+        </section>
 </div>
-<div class="element-name">
-    <label class="title"></label>
-    <div class="nameFirst">
-        <input type="text" name="empleado" id="txtempleado" maxlength="50" placeholder="Nombre empleado" allowed="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚáéíóúÜü" messageid="alfabeticchars" class="large" />
-        <span class="icon-place"></span>
-    </div>
-    <span id="alfabeticchars">Solo acepta caracteres alfabéticos</span>
-</div>
-<div class="element-number">
-    <label class="title"></label>
-    <div class="item-cont">
-        <input type="text" name="sueldobase" id="sueldobase" maxlength="12" placeholder="Sueldo base" allowed="0123456789." messageid="numbersonly" class="large" />
-        <span class="icon-place"></span>
-    </div>
-    <span id="numbersonly">Solo acepta números y punto decimal</span>
-</div>
-<div class="element-checkbox">
-    <label class="title">Horas extras:</label>
-    <div class="column column1">
-        <input type="checkbox" name="hextra" id="hextrasi" value="no" />
-        <span>Habilitar</span>
-    </div>
-</div>
-<div class="element-number">
-    <label class="title"></label>
-    <div class="item-cont">
-        <input type="text" name="numhorasex" id="numhorasex" maxlength="2" disabled="disabled" placeholder="Número de horas" allowed="0123456789" messageid="integersonly" />
-        <span class="icon-place"></span>
-    </div>
-    <span id="integersonly">Solo acepta números enteros</span>
-</div>
-<div class="element-number">
-    <label class="title"></label>
-    <div class="item-cont">
-        <input type="text" name="pagohextra" id="pagohextra" size="12" maxlength="6" disabled="disabled" placeholder="Pago hora extra" allowed="0123456789." messageid="othernumbersonly" />
-        <span class="icon-place"></span>
-    </div>
-    <span id="othernumbersonly">Solo acepta números y punto decimal</span>
-</div>
-<div class="submit">
-    <input type="submit" name="enviar" id="enviar" value="Enviar" />
-    <input type="reset" name="reset" id="reset" value="Restablecer" />
-</div>
-</form>
-</div>
-</article>
-</section>
 <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script src="js/sidebars.js"></script>
